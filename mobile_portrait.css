@@ -1,0 +1,130 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+body { 
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  color: black;
+  background: white;/*url(https://cdn.glitch.com/fc12bcf5-32c0-4e51-bfff-a05e5aaaa718%2FBackground.jpg?1520019051415); /*set background to this image*/
+  bottom: 0px;
+  width: 75%; /* width of 60% max */
+  text-align: left; /* align text to the left */
+  vertical-align: middle; /*set vertical alignment */
+  background-attachment: fixed; /*lock background image in place*/
+}
+h1 {
+  color: #8a0303;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  color:#8a0303; /*chocolate*/
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+h4 {
+  text-decoration: underline;
+  font-size: 18px;
+}
+h6 {
+  color: gray;
+  text-align: center;
+}
+.backbox{
+  border: 0.7291vw solid white;
+  background: white;
+  margin: auto;
+}
+.menu {
+  display: none;
+}
+/*here*/
+
+.mobileMenu {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.mobileMenu #mobileMenuElements {
+  display: none;
+}
+
+.mobileMenu a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mobileMenu a.icon {
+    background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%, 
+    #000 41%, #000 60%, transparent 61%, transparent 80%, #000 81%);
+  padding: 2vw;
+  top: 10px;
+  position: absolute;
+}
+.active {
+  background-color: white;
+  color: black;
+}
+
+/*here*/
+hr {
+  visibility: hidden;
+}
+.gallery {
+  margin-left: 5.33854166vw;
+  margin-right: 5.33854166vw;
+}
+.videoGallery {
+  text-align: center;
+}
+.videoGallery iframe {
+  width: 25%;
+  height: auto;
+}
+.customButton {
+  text-decoration: none;
+  padding: 0.416667vw 0.625vw 0.416667vw 0.625vw;
+  margin-left: 22.645833vw;
+  text-align: center;
+  background-color: #8a0303;
+  color: white;
+}
+.iframe-container{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.centre_image {
+  text-align: center;
+}
+.resources_books_image {
+  float: left;
+  padding: 0.5vw;
+  width: 25%;
+  height: auto;
+}
+blockquote {
+  color: gray;
+  font-style: italic;
+  border-left: 0.6250em solid #ccc;
+  margin: 1.5em 0.6250em;
+  padding: 0.5em 0.6250em;
+}
