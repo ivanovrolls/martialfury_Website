@@ -127,13 +127,15 @@
       <br>
       <br>
     </div> <!--backbox-->
-    <script>
-  fetch('nav.html')
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("nav.html")
     .then(response => response.text())
     .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
+      document.getElementById("nav-placeholder").innerHTML = data;
     })
-    .catch(err => console.error('Error loading nav:', err));
+    .catch(error => console.error("Navbar failed to load:", error));
+});
 </script>
   </body>
 </html>
