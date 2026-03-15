@@ -20,11 +20,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <!-- google fonts end -->
 
-    <!-- google ads start -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4807297358677096"
-      crossorigin="anonymous"></script>
-    <!-- google ads end -->
-
     <link rel="stylesheet" type="text/css" media="screen and (orientation: portrait)" href="../mobile_portrait.css">
     <link rel="stylesheet" type="text/css" media="screen and (orientation: landscape) and (min-width: 200px) and (max-width: 899px)" href="../mobile_landscape.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 900px)" href="../desktop_stylesheet.css">
@@ -32,7 +27,35 @@
   </head>
   <body>
     <div id="nav-placeholder"></div>
-      <!-- <img src="images/logo.png" height="500" width = "600"> -->
+    <!-- Desktop Nav -->
+    <div class="backbox">
+      <ul class="menu">
+        <li class="menuElements"><a href="../home.html">Home</a></li>
+        <li class="menuElements"><a href="../articles.html">Articles</a></li>
+        <!-- <li class="menuElements"><a href="https://my-store-11207325.creator-spring.com" target="_blank">Products</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobileMenu">
+      <a href="#home" class="active"></a>
+      <div id="mobileMenuElements">
+        <a href="../home.html">Home</a>
+        <a href="../articles.html">Articles</a>
+        <!-- <a href="https://my-store-11207325.creator-spring.com" target="_blank">Products</a> -->
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mobileMenuElements");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
       <br>
       <h2>Knuckle and Bone Conditioning in different Martial Arts</h2>
       <div class="sharethis-inline-share-buttons" style = "text-align: justify;"></div>
@@ -139,41 +162,7 @@
             In fact, the BKFC (Bare Knuckle Fighting Championship) is the first promotion allowed to hold a
             sanctioned bare-knuckle event in the United States since 1889.
         </p>
-        <br>
-        <div id="disqus_thread"></div> <!--commen section-->
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://martial-fury.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <br>
+       <br>
       <a class="customButton" href="#">Back To Top</a>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div> <!--backbox-->
-    <script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
-    })
-    .catch(err => console.error('Error loading nav:', err));
-</script>
   </body>
 </html>
