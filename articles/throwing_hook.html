@@ -24,9 +24,7 @@
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6001a0e42bc64600181b1279&product=inline-share-buttons" async="async"></script> <!-- social media buttons -->
   
   <body>
-  <?php 
-    include_once('../art_nav.html');
-    ?>
+    <div id="nav-placeholder"></div>
       <br>
       <h2>Throwing a Hook: Palm in or palm down?</h2>
       <div class="sharethis-inline-share-buttons" style = "text-align: justify;"></div>
@@ -150,5 +148,13 @@
       <br>
       <br>
     </div> <!--backbox-->
+    <script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Error loading nav:', err));
+</script>
   </body>
 </html>

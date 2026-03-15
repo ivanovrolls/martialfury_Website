@@ -31,9 +31,7 @@
   </head>
   
   <body>
-  <?php 
-    include_once('../art_nav.html');
-    ?>
+    <div id="nav-placeholder"></div>
       <!-- <img src="images/logo.png" height="500" width = "600"> -->
       <br>
     <h2>The Weirdest BJJ Submissions</h2>
@@ -155,5 +153,13 @@
       <br>
       <br>
     </div> <!--backbox-->
+    <script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Error loading nav:', err));
+</script>
   </body>
 </html>

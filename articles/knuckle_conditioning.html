@@ -31,9 +31,7 @@
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6001a0e42bc64600181b1279&product=inline-share-buttons" async="async"></script> <!-- social media buttons -->
   </head>
   <body>
-  <?php 
-    include_once('../art_nav.html');
-    ?>
+    <div id="nav-placeholder"></div>
       <!-- <img src="images/logo.png" height="500" width = "600"> -->
       <br>
       <h2>Knuckle and Bone Conditioning in different Martial Arts</h2>
@@ -169,5 +167,13 @@
       <br>
       <br>
     </div> <!--backbox-->
+    <script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Error loading nav:', err));
+</script>
   </body>
 </html>

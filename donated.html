@@ -41,9 +41,7 @@
     
   </head>
   <body>
-    <?php 
-    include_once('nav.html');
-    ?>
+    <div id="nav-placeholder"></div>
       <h1 style = "text-align: center;">Thank you for your generous donation!</h1> 
       <h2 style = "text-align: center;">Your money will help fund my website's upkeep,
     as well as encourage me to continue to create free content for you. I hope you have a lovely
@@ -54,5 +52,13 @@ day :P</h4>
       <br>
       <br>
     </div> <!--backbox-->
+    <script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Error loading nav:', err));
+</script>
   </body>
 </html>
