@@ -13,17 +13,6 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel='icon' href='../images/logo.png' type='image/x-icon'>
-
-      <!-- google fonts start-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-      <!-- google fonts end -->
-
-      <!-- google ads start -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4807297358677096"
-        crossorigin="anonymous"></script>
-      <!-- google ads end -->
-
       <link rel="stylesheet" type="text/css" media="screen and (orientation: portrait)" href="../mobile_portrait.css">
       <link rel="stylesheet" type="text/css" media="screen and (orientation: landscape) and (min-width: 200px) and (max-width: 899px)" href="../mobile_landscape.css">
       <link rel="stylesheet" type="text/css" media="screen and (min-width: 900px)" href="../desktop_stylesheet.css">
@@ -31,10 +20,40 @@
   </head>
   
   <body>
-  <div id="nav-placeholder"></div>
-      <br>
+
+    <!-- Desktop Nav -->
+    <div class="backbox">
+      <ul class="menu">
+        <li class="menuElements"><a href="../home.html">Home</a></li>
+        <li class="menuElements"><a href="../articles.html">Articles</a></li>
+        <!-- <li class="menuElements"><a href="https://my-store-11207325.creator-spring.com" target="_blank">Products</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobileMenu">
+      <a href="#home" class="active"></a>
+      <div id="mobileMenuElements">
+        <a href="../home.html">Home</a>
+        <a href="../articles.html">Articles</a>
+        <!-- <a href="https://my-store-11207325.creator-spring.com" target="_blank">Products</a> -->
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mobileMenuElements");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    <br>
     <h2>Primal flow</h2>
-    <div class="sharethis-inline-share-buttons" style = "text-align: justify;"></div>
+    <div class="sharethis-inline-share-buttons" style="text-align: justify;"></div>
     <hr>
         <p>
             My abs have always been the weakest part of my body - this was highlighted to me during the fleeting time I spent practicing Capoeira.
@@ -65,17 +84,17 @@
         <p>
             These are known as the Seven Primal Movements. For those unaware, "gait" refers to exercises such as running
             or walking. The exercises used to strengthen these movements are, according to
-            <a href = "https://www.kaizencentre.co.uk/activities/primal-movement/">Kaizen Performance Centre</a>, "low impact" and
+            <a href="https://www.kaizencentre.co.uk/activities/primal-movement/">Kaizen Performance Centre</a>, "low impact" and
             "natural". This is perfect for fitness enthusiasts who are interested in forming a connection with the more animalistic
             nature of the human body. 
         </p>
         <hr>
-        <div class = "centre_image">
-            <img src = "../images/animal_flow_1.jpg" height = "auto" width = "100%">
+        <div class="centre_image">
+            <img src="../images/animal_flow_1.jpg" height="auto" width="100%">
         </div>
         <hr>
         <p>
-            Nevertheless, it can be intimidating to try something new. This is why I recommend this <a href = "https://breakingmuscle.com/workouts/primal-move-workout-1-the-warm-up/"> series of articles</a> for a
+            Nevertheless, it can be intimidating to try something new. This is why I recommend this <a href="https://breakingmuscle.com/workouts/primal-move-workout-1-the-warm-up/">series of articles</a> for a
             good guide to animal flow workouts.
         </p>
         <hr>
@@ -87,8 +106,8 @@
             stretching.
         </p>
         <hr>
-        <div class = "centre_image">
-            <img src = "../images/animal_flow_2.jpg" height = "auto" width = "100%">
+        <div class="centre_image">
+            <img src="../images/animal_flow_2.jpg" height="auto" width="100%">
         </div>
         <hr>
         <p>
@@ -99,9 +118,9 @@
             An example of this is scorpion kick ins.
         </p>
         <hr>
-        <div class = "centre_image">
-            <img src = "../images/kickins.jpg" height = "auto" width = "100%">
-            <p style = "color: grey; text-align: center; font-size: 15px;">Coincidentally, this is a drill used to warm up in one of the BJJ gyms I train at.</p>
+        <div class="centre_image">
+            <img src="../images/kickins.jpg" height="auto" width="100%">
+            <p style="color: grey; text-align: center; font-size: 15px;">Coincidentally, this is a drill used to warm up in one of the BJJ gyms I train at.</p>
         </div>
         <hr>        
         <p>
@@ -110,17 +129,8 @@
             found in these sports, and the strenghtening of the wrestling-related parts of the body.
         </p>
         <br>
-        <div id="disqus_thread"></div> <!--commen section-->
+        <div id="disqus_thread"></div> <!--comment section-->
         <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
             (function() { // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
             s.src = 'https://martial-fury.disqus.com/embed.js';
@@ -136,14 +146,6 @@
       <br>
       <br>
       <br>
-    </div> <!--backbox-->
-    <script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
-    })
-    .catch(err => console.error('Error loading nav:', err));
-</script>
+
   </body>
 </html>
