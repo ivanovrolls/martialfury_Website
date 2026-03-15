@@ -45,17 +45,14 @@ h6 {
   display: none;
 }
 /*here*/
-
 .mobileMenu {
   overflow: hidden;
   background-color: white;
   position: relative;
 }
-
 .mobileMenu #mobileMenuElements {
   display: none;
 }
-
 .mobileMenu a {
   color: black;
   padding: 14px 16px;
@@ -63,19 +60,20 @@ h6 {
   font-size: 17px;
   display: block;
 }
-
 .mobileMenu a.icon {
-    background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%, 
+  background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%, 
     #000 41%, #000 60%, transparent 61%, transparent 80%, #000 81%);
   padding: 2vw;
   top: 10px;
+  right: 0;
   position: absolute;
+  width: 4vw;
+  height: 3vw;
 }
 .active {
   background-color: white;
   color: black;
 }
-
 /*here*/
 hr {
   visibility: hidden;
