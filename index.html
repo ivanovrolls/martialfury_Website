@@ -22,36 +22,41 @@
     <link rel="stylesheet" type="text/css" media="screen and (orientation: landscape) and (min-width: 200px) and (max-width: 899px)" href="mobile_landscape.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 900px)" href="desktop_stylesheet.css">
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6001a0e42bc64600181b1279&product=inline-share-buttons" async="async"></script> <!-- social media buttons -->
-    
-    <!-- MailerLite Universal -->
-    <!-- <script>
-      (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-      var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-      f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-      var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-      _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-
-      var ml_account = ml('accounts', '2890696', 'y5e7d2t7i1', 'load');
-    </script> -->
-  <!-- End MailerLite Universal -->
+  
 
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+        <div class="backbox"><!--backbox-->
+        <ul class = "menu">
+            <li class = "menuElements"><a href="home.html">Home</a></li>    
+            <li class = "menuElements"><a href="articles.html">Articles</a></li>
+            <!-- <li class = "menuElements"><a href="https://my-store-11207325.creator-spring.com" target = "_blank">Products</a></li> -->
+        </ul>
+    </div>
+    <div class="mobileMenu">
+        <a href="#home" class="active"></a>
+        <div id="mobileMenuElements">
+          <a href="home.html">Home</a> 
+          <a href="articles.html">Articles</a>
+          <!-- <a href="https://my-store-11207325.creator-spring.com.html" target = "_blank">Products</a> -->
+        </div>
+        <a href="javascript:void(0);"class="icon" onclick="myFunction()"></a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("mobileMenuElements");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
     
     <div class = "backbox"></div>
       <div class = "centre_image">
         <img src = "images/logo2.png" height="auto" width="85%"> 
-      </div>
-
-      <!-- <form style = "float: right; width: 31%; margin: 0px;" action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="CDSVNZZ7HK2RU" />
-        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" style = "float: right;" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-      </form>  -->
-      
-      <!-- <div class="sharethis-inline-share-buttons" style="margin: auto;">
-      </div> <!-- social media buttons -->        
+      </div>  
 
       <div class = "centre_image">
         <img src = "images/comp3_vic1.jpg" height="auto" width="80%">
@@ -112,15 +117,5 @@
       <br>
       <br>
     </div> <!--backbox-->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("nav.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("nav-placeholder").innerHTML = data;
-    })
-    .catch(error => console.error("Navbar failed to load:", error));
-});
-</script>
   </body>
 </html>
