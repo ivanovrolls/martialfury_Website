@@ -54,14 +54,11 @@
   /**/
   .menu { /* unordered list properties */
     list-style-type: none; /*takes out bullet points */
-    margin: 0.25vw; /* scaling */
+    margin: 0.25vw 0; /* scaling */
     padding: 0vw; /* scaling */
     overflow: hidden; /* clipping rules: https://www.w3schools.com/cssref/pr_pos_overflow.asp */
     background-color: white; /* colour */;
     text-align: center;
-    margin-left: 27.5%;
-    margin-right:12.5%;
-    /* position: fixed;*/
   }
   .menuElements { /* list item properties */
     float: left; /* move item to the left */
